@@ -10,6 +10,8 @@ describe 'ten minute walk' do
   it 'returns false if its more WEST than EAST direction' do 
     expect(ten_minute_walk?(['w', 's', 'e', 'n', 'n', 'e', 's', 'w', 'w', 'w'])).to eq false
   end
+  it 'returns false if its more SOUTH than NORTH direction' do 
+    expect(ten_minute_walk?(['w', 's', 'e', 's', 's', 'e', 's', 'w', 'n', 'n'])).to eq false
+  end
 end
-
  
