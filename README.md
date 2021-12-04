@@ -24,6 +24,7 @@ ten_minute_walk?(['w', 's']) # => false
 
 | Input ten_minute_walk?(directions)                           | Output | Description                       |
 | ------------------------------------------------------------ | ------ | --------------------------------- |
+| ['w', 's', 'e', 'e', 'n', 'n', 'e', 's', 'w', 'w']           | true   | w = e && s = n                    |
 | ['n', 'n', 'n', 'n', 'n', 'n', 'n', 'n', 'n', 'n']           | false  | one direction only                |
 | ['w', 's', 'e', 'n', 'n', 'e', 's', 'w', 'w', 'w']           | false  | 4w 2e 2s 2n more WEST than EAST   |
 | ['w', 's', 'e', 's', 's', 'e', 's', 'w', 'n', 'n']           | false  | 2w 2e 4s 2n more SOUTH than NORTH |
@@ -31,4 +32,3 @@ ten_minute_walk?(['w', 's']) # => false
 | ['w', 'n', 'e', 'n', 'n', 'e', 'n', 'w', 's', 's']           | false  | 2w 2e 4s 2n more NORTH than SOUTH |
 | ['w', 's']                                                   | false  | less than a 10 minute walk        |
 | ['w', 's', 'e', 'e', 'n', 'n', 'e', 's', 'w', 'w', 'w', 's'] | false  | greater than a 10 minute walk     |
-| ['w', 's', 'e', 'e', 'n', 'n', 'e', 's', 'w', 'w']           | true   | w = e && s = n                    |
