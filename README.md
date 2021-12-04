@@ -32,3 +32,11 @@ ten_minute_walk?(['w', 's']) # => false
 | ['w', 'n', 'e', 'n', 'n', 'e', 'n', 'w', 's', 's']           | false  | 2w 2e 4s 2n more NORTH than SOUTH |
 | ['w', 's']                                                   | false  | less than a 10 minute walk        |
 | ['w', 's', 'e', 'e', 'n', 'n', 'e', 's', 'w', 'w', 'w', 's'] | false  | greater than a 10 minute walk     |
+
+## Notes
+
+This is post Makers Academy where I returned to full-time employment and have limited time to code. I've given myself small coding challenges by revisiting TDD in Ruby from the Makers Academy process workshops.
+
+I attempted this during Makers Academy course and looking at the previous attempt I've noticed the following improvements:
+
+- added an additional test
