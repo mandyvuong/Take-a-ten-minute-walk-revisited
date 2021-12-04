@@ -1,3 +1,3 @@
 def ten_minute_walk?(directions)
-  true
+  directions.uniq.size > 1 ? true : false
 end
