@@ -22,4 +22,8 @@ describe 'ten minute walk' do
   it 'returns false if walk is less than 10 minutes' do 
     expect(ten_minute_walk?(['w', 's'])).to eq false
   end
+  it 'returns false if walk is greater than 10 minutes' do 
+    expect(ten_minute_walk?(['w', 's', 'e', 'e', 'n', 'n', 'e', 's', 'w', 'w', 'w', 's'])).to eq false
+  end
 end
+
