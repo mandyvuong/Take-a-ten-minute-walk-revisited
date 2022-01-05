@@ -20,19 +20,6 @@ ten_minute_walk?(['w', 's', 'e', 's', 's', 'e', 's', 'w', 'n', 'n']) # => false
 ten_minute_walk?(['w', 's']) # => false
 ```
 
-## Plan
-
-| Input ten_minute_walk?(directions)                           | Output | Description                       |
-| ------------------------------------------------------------ | ------ | --------------------------------- |
-| ['w', 's', 'e', 'e', 'n', 'n', 'e', 's', 'w', 'w']           | true   | w = e && s = n                    |
-| ['n', 'n', 'n', 'n', 'n', 'n', 'n', 'n', 'n', 'n']           | false  | one direction only                |
-| ['w', 's', 'e', 'n', 'n', 'e', 's', 'w', 'w', 'w']           | false  | 4w 2e 2s 2n more WEST than EAST   |
-| ['w', 's', 'e', 's', 's', 'e', 's', 'w', 'n', 'n']           | false  | 2w 2e 4s 2n more SOUTH than NORTH |
-| ['e', 's', 'w', 'n', 'n', 'w', 's', 'e', 'e', 'e']           | false  | 4w 2e 2s 2n more EAST than WEST   |
-| ['w', 'n', 'e', 'n', 'n', 'e', 'n', 'w', 's', 's']           | false  | 2w 2e 4s 2n more NORTH than SOUTH |
-| ['w', 's']                                                   | false  | less than a 10 minute walk        |
-| ['w', 's', 'e', 'e', 'n', 'n', 'e', 's', 'w', 'w', 'w', 's'] | false  | greater than a 10 minute walk     |
-
 ## Notes
 
 This is post Makers Academy where I returned to full-time employment and have limited time to code. I've given myself small coding challenges by revisiting TDD in Ruby from the Makers Academy process workshops.
